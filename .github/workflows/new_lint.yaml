@@ -140,7 +140,7 @@ jobs:
   integration-tests:
     runs-on: matterlabs-ci-runner-ultra-performance
     env:
-      RUN_CONTRACT_VERIFICATION_TEST: false # TODO: enable later
+      RUN_CONTRACT_VERIFICATION_TEST: true
       ZKSYNC_HOME: ${{ github.workspace }}
       L1_RPC_URL: "http://localhost:8545"
       SERVER_DB_URL: "postgres://postgres:notsecurepassword@localhost:5432"
